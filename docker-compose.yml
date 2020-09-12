@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+    web:
+        build:
+            context: ./Web
+        ports:
+            - 80:80
+        volumes:
+            - ./Web/Sources:/var/www/html
+            
